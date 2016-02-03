@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML>
+<html ng-app＝"myApp" style="margin: 0 !important;">
+<head>
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">   
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<title>SpaceCycle 測試用</title>
+
+	<link rel="stylesheet" href="lungo/lungo.css">
+	<link rel="stylesheet" href="lungo/lungo.icon.css">
+	<link rel="stylesheet" href="lungo/lungo.theme.css">
+	
+	<style type="text/css">
+		.install{ 
+			position          :relative; 
+			margin            :10px; 
+			padding           :33px 10px 10px 80px; 
+		}
+
+		.icon{ 
+			position          :absolute; 
+			top               :-10px; 
+			left              :10px;
+		}
+
+        .iconImg {
+            width             :64px;
+            height            :64px;
+        }
+
+		.install strong{ 
+			position:absolute; 
+			top:14px; 
+			left:80px; 
+			color:#333; 
+			font-size:24px;
+		}
+	</style>
+
+</head>
+<body >
+	<section id="main" data-transition="slide" data-aside="features" class="drag">
+        <header>
+        	<label class="title centered">SpaceCycle 測試用 App</label>
+            <nav class="on-right">
+                <a href="#"  ><abbr class="text tiny ">v1.0</abbr></a>
+            </nav>
+        </header>
+
+        <article id="main-article" class="list scroll indented">
+        	<ul>
+        		<li>
+                    <!-- plist 真正的連結 -->
+            		<a href="itms-services://?action=download-manifest&url=http://spacecycledev.bitbucket.org/xxx.plist">
+            			<div class="install">
+            				<div class="icon"><img class="iconImg" src="icon.png"/></div>
+                			<strong>iOS 測試版</strong>
+            			</div>
+
+            		</a>
+        		</li>
+
+        		<li>
+        			<a href="http://spacecycledev.bitbucket.org/xxx.apx">
+        				<div class="install">
+						    <div class="icon"><img class="iconImg" src="icon.png"/></div>
+						    <strong>Android 測試版</strong>
+					    </div>
+        			</a>
+        		</li>
+        	</ul>
+		</article>
+    </section>
+
+    <!-- Lungo dependencies -->
+    <script src="quo.js"></script>
+    <script src="lungo/lungo.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'SpaceCycle',
+            version: '1.0',
+            resources: [],
+            history: false
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
